@@ -1,6 +1,22 @@
+:root {
+  --header-font: ;
+
+  --accent-red: rgb(80, 16, 1);
+  --accent-orange: rgb(118, 44, 5);
+  --dark-grey: rgb(121, 100, 101);
+  --mid-grey: rgb(174, 155, 152);
+  --light-beige: rgb(217, 197, 178);
+}
+
+
 * {
   background-color: rgb(41, 39, 39);
 }
+
+body {
+  color: white;
+}
+
 
 img {
   height: auto;
