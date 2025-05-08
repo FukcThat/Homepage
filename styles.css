@@ -8,11 +8,8 @@
   --light-beige: rgb(217, 197, 178);
 }
 
-* {
-  background-color: rgb(41, 39, 39);
-}
-
 body {
+  background-color: rgb(41, 39, 39);
   color: white;
 }
 
