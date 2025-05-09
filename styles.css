@@ -3,13 +3,13 @@
 
   --accent-red: rgb(80, 16, 1);
   --accent-orange: rgb(118, 44, 5);
-  --dark-grey: rgb(121, 100, 101);
-  --mid-grey: rgb(174, 155, 152);
+  --dark-grey: rgb(39, 35, 35);
+  --mid-grey: rgb(94, 84, 82);
   --light-beige: rgb(217, 197, 178);
 }
 
 body {
-  background-color: rgb(41, 39, 39);
+  background-color: var(--dark-grey);
   color: white;
 }
 
@@ -28,5 +28,5 @@ a img {
   height: 15rem;
   width: 12rem;
   border-radius: 1rem;
-  background-color: var(--dark-grey);
+  background-color: var(--mid-grey);
 }
