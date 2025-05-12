@@ -1,21 +1,31 @@
 :root {
-  --main-font: "Barlow", sans-serif;
+  --main-font: "Inconsolata", monospace;
 
   --accent-red: rgb(80, 16, 1);
-  --accent-orange: rgb(118, 44, 5);
+  --accent-berry: rgb(128, 48, 41);
   --dark-grey: rgb(39, 35, 35);
-  --mid-grey: rgb(71, 65, 64);
+  --mid-grey: rgb(145, 94, 84);
   --light-beige: rgb(217, 197, 178);
 }
 
 body {
   background-color: var(--dark-grey);
   color: rgb(235, 203, 203);
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 a img {
   height: 32px;
   width: auto;
+}
+
+.contact {
+  width: 100%;
+  background-color: var(--accent-berry);
+  padding: 1.5rem;
 }
 
 .project-wrapper {
@@ -29,4 +39,7 @@ a img {
   width: 12rem;
   border-radius: 1rem;
   background-color: var(--mid-grey);
+  font-size: 1rem;
+  padding-inline: 1rem;
+  padding-block: 1.25rem;
 }
