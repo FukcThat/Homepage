@@ -23,7 +23,7 @@ section {
   padding: 2rem;
 }
 
-a img {
+.project-card a img {
   height: 24px;
   width: auto;
 }
@@ -74,4 +74,9 @@ a img {
   font-size: 1rem;
   padding-inline: 1rem;
   padding-block: 1.25rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
 }
