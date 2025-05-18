@@ -93,6 +93,11 @@ section {
   padding-inline: 1rem;
   padding-block: 1.25rem;
   margin: 0 auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
 }
 
 .project-card img {
