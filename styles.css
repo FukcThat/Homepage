@@ -45,7 +45,7 @@ section {
 }
 
 .about--text {
-  height: 20rem;
+  min-height: 20rem;
   background-color: rgb(66, 63, 63);
   width: 70%;
   padding: 2rem;
@@ -59,10 +59,36 @@ section {
   z-index: 2;
 }
 
-.contact {
-  width: 100%;
-  background-color: var(--accent-berry);
-  padding: 1.5rem;
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about--text {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .about h2 {
+    position: static;
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.about,
+.header-img,
+.about--text,
+.about h2 {
+  transition: all 0.3s ease-in-out;
 }
 
 .project-wrapper {
@@ -106,4 +132,41 @@ section {
   max-height: 12rem;
   object-fit: cover;
   border-radius: 0.25rem;
+}
+
+.contact {
+  max-width: 100%;
+  background-color: var(--accent-berry);
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact--description {
+  max-width: 500px;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.contact--address {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.contact--address li {
+  margin: 0.2rem 0;
+}
+
+.contact p {
+  margin: 0.3rem 0;
 }
